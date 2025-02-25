@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+     - include: tasks/create-ansible-user.yml
+     - include: tasks/install-cronjob-ansible-pull.yml
