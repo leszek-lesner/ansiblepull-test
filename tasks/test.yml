@@ -1,0 +1,5 @@
+- name: Create /tmp/test.txt with content "klappt"
+  copy:
+    dest: /tmp/test.txt
+    content: "klappt\n"
+    mode: '0666'
